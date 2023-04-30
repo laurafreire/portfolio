@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Summit Grocery Inc</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/pic00.png" alt="" /></span><span class="title">Laura Freire</span>
+								</a>
+
+							
+
+						</div>
+					</header>
+	
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Summit Grocery Inc</h1>
+							<h2>Power BI project</h2>
+							<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+							<p align="justify">In this Power BI project the objective was to answer some questions using data for Summit Grocery Inc. The questions were:</p>
+							<p align="justify">1. If revenue decreased from 2020 to 2021. The answer can be seen by clicking on the year in the "year" slicer and checking the "total sales" for each year. It is also possible to monitor the total sales by month through the "Total Sales by Month" table.</p>
+							<p align="justify">2. Who are the two sellers with the lowest sales. This question is answered by the "Total Sales by Seller" table.</p>
+							<p align="justify">3. What are the worst-selling products. This can be visualized in the "Total Sales by Product" table, and the percentage that each product represents of total sales and the average ticket price for each product can also be seen in the adjacent table.</p>
+							<p align="justify">It is also possible to visualize how sales are distributed among each sales team and the total sales value corresponding to products purchased from each supplier.</p>
+							<p align="justify">In this Business Intelligence project developed for Summit Grocery Inc, the goal was to explore the company's data to answer some crucial questions. Utilizing various Power BI tools and resources, this project allowed for interactive and efficient data visualization and analysis, gaining insights into their business operations to make informed decisions. </p>
+							<br>
+							<h3>The main DAX functions used were:</h3>
+							<p align="justify">TotalSale = SUMX(fSales, fSales[QtdItens]*fSales[PrecoUnitario])</p>
+							<p align="justify">GeneralTotal = CALCULATE([TotalSale], ALLSELECTED(fSales))</p>
+							<p align="justify">AverageTicket = DIVIDE([TotalSale],[QntSale])</p>
+							<p align="justify">Average = AVERAGEX(VALUES(dCalendar[Date].[Year]),[TotalSale])</p>
+							<br>
+							<h4>Dashboard:</h4>
+							<img src="images/pic04.jpg">
+							<br>
+							<br>
+							<h4>Dashboard 2020 selected in the "Year" slicer:</h4>
+							<img src="images/pic05.jpg">								
+							<br>
+							<br>
+							<h4>Dashboard 2021 selected in the "Year" slicer:</h4>
+							<img src="images/pic07.jpg">
+							<br>
+							<br>
+
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Linkedin:</h2>
+								<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/laura-freire-b322a7251/" class="icon brands style2 fa-linkedin"><span class="label">Linkedin</span></a></li>
+
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
